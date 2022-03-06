@@ -6,6 +6,8 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import StarIcon from "@mui/icons-material/Star";
 
+import Router from "next/router";
+
 import styles from '../../styles/Home.module.css'
 
 export default function Search() {
@@ -16,7 +18,7 @@ export default function Search() {
         aria-label="contacts"
       >
         <ListItem>
-          <ListItemButton>
+          <ListItemButton onClick={() => Router.push("/quiz")}>
             <ListItemIcon>
               <StarIcon />
             </ListItemIcon>
