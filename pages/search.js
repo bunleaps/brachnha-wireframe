@@ -3,31 +3,34 @@ import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import TextField from "@mui/material/TextField";
-import InputAdornment from '@mui/material/InputAdornment';
-import { makeStyles } from "@mui/styles";
+import InputAdornment from "@mui/material/InputAdornment";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import HomeIcon from "@mui/icons-material/Home";
+import Typography from "@mui/material/Typography";
 
-import SearchIcon from '@mui/icons-material/Search';
+import SearchIcon from "@mui/icons-material/Search";
 
 import Router from "next/router";
 
 import styles from "../styles/Home.module.css";
 
-const useStyles = makeStyles({
-  root: {
-    margin: "5px",
-  },
-});
-
 export default function Search() {
-  const classes = useStyles();
-
   return (
     <div className={styles.container}>
-      <h1>Search</h1>
+      <AppBar position="sticky" sx={{ backgroundColor: "whitesmoke" }}>
+        <Toolbar variant="regular" sx={{ color: "black" }}>
+          <SearchIcon sx={{ mr: 2 }} />
+          <Typography variant="h6" color="inherit" component="div">
+            Search
+          </Typography>
+        </Toolbar>
+      </AppBar>
 
+      <br />
       <div className={styles.MainMenuCard}>
         <TextField
-          className={classes.root}
+          sx={{ margin: "5px" }}
           fullWidth
           label="Search"
           id="fullWidth"
@@ -40,9 +43,9 @@ export default function Search() {
           }}
         />
         <br />
+        <br />
         <Card
-          className={classes.root}
-          sx={{ minWidth: 400 }}
+          sx={{ minWidth: 430, margin: "5px auto", backgroundColor: '#48dbfb' }}
           onClick={() => Router.push("/search")}
         >
           <CardContent>
@@ -50,8 +53,7 @@ export default function Search() {
           </CardContent>
         </Card>
         <Card
-          className={classes.root}
-          sx={{ minWidth: 400 }}
+          sx={{ minWidth: 430, margin: "5px auto", backgroundColor: '#ff6b6b' }}
           onClick={() => Router.push("/search")}
         >
           <CardContent>
@@ -59,8 +61,7 @@ export default function Search() {
           </CardContent>
         </Card>
         <Card
-          className={classes.root}
-          sx={{ minWidth: 400 }}
+          sx={{ minWidth: 430, margin: "5px auto", backgroundColor: '#feca57' }}
           onClick={() => Router.push("/search")}
         >
           <CardContent>

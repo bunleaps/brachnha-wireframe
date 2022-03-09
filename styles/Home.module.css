@@ -13,6 +13,7 @@
   display: flex;
   flex-wrap: wrap;
   padding: 5px;
+  margin-bottom: 50px;
 }
 
 .prof_container {
@@ -37,5 +38,5 @@
 
 .quiz_container {
   width: 100%;
-  padding: 10px;
+  margin: 0 auto;
 }

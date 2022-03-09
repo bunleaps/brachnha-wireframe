@@ -9,26 +9,14 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import Router from 'next/router';
 import styles from "../styles/Home.module.css";
 
-const useStyles = makeStyles({
-  root: {
-    backgroundColor: "whitesmoke",
-  }
-});
-
 export default function Navbar() {
   const [value, setValue] = React.useState(0);
-
-  const classes = useStyles();
 
   return (
     <div className={styles.Navbar}>
       <BottomNavigation
-        className={classes.root}
+        sx={{backgroundColor: "whitesmoke", boxShadow: 5}}
         showLabels
-        // value={value}
-        // onChange={(event, newValue) => {
-        //   setValue(newValue);
-        // }}
       >
         <BottomNavigationAction label="Recents" icon={<HomeIcon />} onClick={() => Router.push('/')}/>
             <BottomNavigationAction label="Bookmarks" icon={<BookmarkIcon />} onClick={() => Router.push('/bookmark')}/>

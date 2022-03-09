@@ -4,7 +4,8 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import StarIcon from "@mui/icons-material/Star";
+import AssistantPhotoIcon from '@mui/icons-material/AssistantPhoto';
+import Typography from '@mui/material/Typography';
 
 import Router from "next/router";
 
@@ -13,32 +14,35 @@ import styles from '../../styles/Home.module.css'
 export default function Search() {
   return (
     <div className={styles.container}>
-      <h1>Recents Quiz</h1>
+      <Typography variant="h5" sx={{fontWeight: 'bold', paddingLeft: '10px', paddingTop: '5px'}}>
+          Recent Quiz
+      </Typography>
+
       <List sx={{ width: "100%", bgcolor: "background.paper" }}
         aria-label="contacts"
       >
         <ListItem>
-          <ListItemButton onClick={() => Router.push("/quiz")}>
+          <ListItemButton sx={{backgroundColor: '#10ac84'}} onClick={() => Router.push("/quiz")}>
             <ListItemIcon>
-              <StarIcon />
+              <AssistantPhotoIcon sx={{color: '#1dd1a1'}}/>
             </ListItemIcon>
-            <ListItemText primary="Test #1" />
+            <ListItemText primary="Trig 1" />
           </ListItemButton>
         </ListItem>
         <ListItem>
-          <ListItemButton>
+          <ListItemButton sx={{backgroundColor: '#48dbfb'}}>
             <ListItemIcon>
-              <StarIcon />
+              <AssistantPhotoIcon />
             </ListItemIcon>
-            <ListItemText primary="Test #2" />
+            <ListItemText primary="Geometry 2" />
           </ListItemButton>
         </ListItem>
         <ListItem>
-          <ListItemButton>
+          <ListItemButton sx={{backgroundColor: '#48dbfb'}}>
             <ListItemIcon>
-              <StarIcon />
+              <AssistantPhotoIcon />
             </ListItemIcon>
-            <ListItemText primary="Test #3" />
+            <ListItemText primary="Geometry 3" />
           </ListItemButton>
         </ListItem>
       </List>
