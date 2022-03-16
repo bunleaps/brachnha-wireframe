@@ -13,6 +13,8 @@ import Typography from "@mui/material/Typography";
 import { IconButton } from "@mui/material";
 import { CircularProgress } from "@mui/material";
 import { Box } from "@mui/system";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
 
 import CheckIcon from "@mui/icons-material/Check";
 import WrongIcon from "@mui/icons-material/Close";
@@ -50,7 +52,7 @@ export default function Quiz() {
               <DvrIcon /> 9/10
             </h1>
           </center>
-          <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <Box sx={{ display: "flex", justifyContent: "center", border: "1px dashed grey", p: 2 }}>
             <Box sx={{ position: "relative", display: "inline-flex", mr: 3 }}>
               <CircularProgress
                 size={68}
@@ -149,6 +151,27 @@ export default function Quiz() {
             </Box>
           </Box>
           <br />
+
+          <Box component="span" sx={{ p: 1, border: "1px dashed grey", mb: 8 }}>
+            <h3>Recommendation</h3>
+            <div className={styles.MainMenuCard}>
+              <Card variant="outlined" sx={{ minWidth: 180, mb: 1, mr: 1 }}>
+                <CardContent>
+                  <h4>Trig 2</h4>
+                </CardContent>
+              </Card>
+              <Card variant="outlined" sx={{ minWidth: 180, mb: 1 }}>
+                <CardContent>
+                  <h4>Trig 3</h4>
+                </CardContent>
+              </Card>
+              <Card variant="outlined" sx={{ minWidth: 180, mb: 1 }}>
+                <CardContent>
+                  <h4>Geo 1</h4>
+                </CardContent>
+              </Card>
+            </div>
+          </Box>
 
           <FormLabel id="demo-row-radio-buttons-group-label">
             <CheckIcon /> Question 1

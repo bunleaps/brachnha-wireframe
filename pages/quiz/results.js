@@ -11,6 +11,9 @@ import Toolbar from "@mui/material/Toolbar";
 import DvrIcon from "@mui/icons-material/Dvr";
 import Typography from "@mui/material/Typography";
 import { IconButton } from "@mui/material";
+import Box from "@mui/material/Box";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
 
 import CheckIcon from "@mui/icons-material/Check";
 import WrongIcon from "@mui/icons-material/Close";
@@ -44,10 +47,13 @@ export default function Quiz() {
       <div className={styles.quiz_container}>
         <FormControl sx={{ padding: 2, width: "100%" }}>
           <center>
-            <h1><DvrIcon /> 9/10</h1>
+            <h1>
+              <DvrIcon /> 9/10
+            </h1>
           </center>
+
           <FormLabel id="demo-row-radio-buttons-group-label">
-            <CheckIcon/> Question 1
+            <CheckIcon /> Question 1
             <Image
               src="/assets/quiz/01.png"
               alt="img 1"
@@ -68,8 +74,12 @@ export default function Quiz() {
             <FormControlLabel value="0" control={<Radio />} label="B" />
             <FormControlLabel value="1" control={<Radio />} label="C" />
           </RadioGroup>
+          <Box component="span" sx={{ p: 1, border: "1px dashed grey" }}>
+            <p>យើងគួរធ្វើបែបនេះ</p>
+          </Box>
+            <br />
           <FormLabel id="demo-row-radio-buttons-group-label">
-          <CheckIcon/> Question 2
+            <CheckIcon /> Question 2
             <Image
               src="/assets/quiz/02.png"
               alt="img 2"
@@ -90,8 +100,12 @@ export default function Quiz() {
             <FormControlLabel value="0" control={<Radio />} label="B" />
             <FormControlLabel value="1" control={<Radio />} label="C" />
           </RadioGroup>
+          <Box component="span" sx={{ p: 1, border: "1px dashed grey" }}>
+            <p>យើងគួរធ្វើបែបនេះ</p>
+          </Box>
+            <br />
           <FormLabel id="demo-row-radio-buttons-group-label">
-          <CheckIcon/> Question 3
+            <CheckIcon /> Question 3
             <Image
               src="/assets/quiz/03.png"
               alt="img 3"
@@ -113,8 +127,12 @@ export default function Quiz() {
             <FormControlLabel value="1" control={<Radio />} label="C" />
             <FormControlLabel value="2" control={<Radio />} label="D" />
           </RadioGroup>
+          <Box component="span" sx={{ p: 1, border: "1px dashed grey" }}>
+            <p>យើងគួរធ្វើបែបនេះ</p>
+          </Box>
+            <br />
           <FormLabel id="demo-row-radio-buttons-group-label">
-          <CheckIcon/> Question 4
+            <CheckIcon /> Question 4
             <Image
               src="/assets/quiz/04.png"
               alt="img 4"
@@ -136,8 +154,12 @@ export default function Quiz() {
             <FormControlLabel value="1" control={<Radio />} label="C" />
             <FormControlLabel value="2" control={<Radio />} label="D" />
           </RadioGroup>
+          <Box component="span" sx={{ p: 1, border: "1px dashed grey" }}>
+            <p>យើងគួរធ្វើបែបនេះ</p>
+          </Box>
+            <br />
           <FormLabel id="demo-row-radio-buttons-group-label">
-          <CheckIcon/> Question 5
+            <CheckIcon /> Question 5
             <Image
               src="/assets/quiz/05.png"
               alt="img 5"
@@ -159,8 +181,12 @@ export default function Quiz() {
             <FormControlLabel value="1" control={<Radio />} label="C" />
             <FormControlLabel value="2" control={<Radio />} label="D" />
           </RadioGroup>
+          <Box component="span" sx={{ p: 1, border: "1px dashed grey" }}>
+            <p>យើងគួរធ្វើបែបនេះ</p>
+          </Box>
+            <br />
           <FormLabel id="demo-row-radio-buttons-group-label">
-          <CheckIcon/> Question 6
+            <CheckIcon /> Question 6
             <Image
               src="/assets/quiz/06.png"
               alt="img 6"
@@ -182,8 +208,12 @@ export default function Quiz() {
             <FormControlLabel value="1" control={<Radio />} label="C" />
             <FormControlLabel value="2" control={<Radio />} label="D" />
           </RadioGroup>
+          <Box component="span" sx={{ p: 1, border: "1px dashed grey" }}>
+            <p>យើងគួរធ្វើបែបនេះ</p>
+          </Box>
+            <br />
           <FormLabel id="demo-row-radio-buttons-group-label">
-          <CheckIcon/> Question 7
+            <CheckIcon /> Question 7
             <Image
               src="/assets/quiz/08.png"
               alt="img 8"
@@ -205,8 +235,12 @@ export default function Quiz() {
             <FormControlLabel value="1" control={<Radio />} label="C" />
             <FormControlLabel value="2" control={<Radio />} label="D" />
           </RadioGroup>
+          <Box component="span" sx={{ p: 1, border: "1px dashed grey" }}>
+            <p>យើងគួរធ្វើបែបនេះ</p>
+          </Box>
+            <br />
           <FormLabel id="demo-row-radio-buttons-group-label">
-          <CheckIcon/> Question 8
+            <CheckIcon /> Question 8
             <Image
               src="/assets/quiz/09.png"
               alt="img 9"
@@ -228,8 +262,12 @@ export default function Quiz() {
             <FormControlLabel value="1" control={<Radio />} label="C" />
             <FormControlLabel value="2" control={<Radio />} label="D" />
           </RadioGroup>
+          <Box component="span" sx={{ p: 1, border: "1px dashed grey" }}>
+            <p>យើងគួរធ្វើបែបនេះ</p>
+          </Box>
+            <br />
           <FormLabel id="demo-row-radio-buttons-group-label">
-          <CheckIcon/> Question 9
+            <CheckIcon /> Question 9
             <Image
               src="/assets/quiz/10.png"
               alt="img 10"
@@ -251,8 +289,13 @@ export default function Quiz() {
             <FormControlLabel value="1" control={<Radio />} label="C" />
             <FormControlLabel value="2" control={<Radio />} label="D" />
           </RadioGroup>
+          <Box component="span" sx={{ p: 1, border: "1px dashed grey" }}>
+            <p>យើងគួរធ្វើបែបនេះ</p>
+          </Box>
+            <br />
           <FormLabel id="demo-row-radio-buttons-group-label">
-          <WrongIcon/>Question 10
+            <WrongIcon />
+            Question 10
             <Image
               src="/assets/quiz/11.png"
               alt="img 11"
@@ -263,7 +306,7 @@ export default function Quiz() {
             />
           </FormLabel>
           <RadioGroup
-            sx={{ display: "flex", justifyContent: "space-around", mb:10 }}
+            sx={{ display: "flex", justifyContent: "space-around" }}
             row
             aria-labelledby="demo-row-radio-buttons-group-label"
             name="row-radio-buttons-group"
@@ -274,6 +317,30 @@ export default function Quiz() {
             <FormControlLabel value="1" control={<Radio />} label="C" />
             <FormControlLabel value="2" control={<Radio />} label="D" />
           </RadioGroup>
+          <Box component="span" sx={{ p: 1, border: "1px dashed grey", mb: 8 }}>
+            <p>យើងគួរធ្វើបែបនេះ</p>
+          </Box>
+            <br />
+          <Box component="span" sx={{ p: 1, border: "1px dashed grey", mb: 8 }}>
+            <h3>Recommendation</h3>
+            <div className={styles.MainMenuCard}>
+              <Card variant="outlined" sx={{ minWidth: 180, mb: 1, mr: 1 }}>
+                <CardContent>
+                  <h4>Trig 2</h4>
+                </CardContent>
+              </Card>
+              <Card variant="outlined" sx={{ minWidth: 180, mb: 1 }}>
+                <CardContent>
+                  <h4>Trig 3</h4>
+                </CardContent>
+              </Card>
+              <Card variant="outlined" sx={{ minWidth: 180, mb: 1 }}>
+                <CardContent>
+                  <h4>Geo 1</h4>
+                </CardContent>
+              </Card>
+            </div>
+          </Box>
         </FormControl>
       </div>
     </div>
